@@ -206,15 +206,15 @@
     <!-- Work -->
     <section id="work" class="section">
         <h1>My work</h1>
-        <h3>Project</h3>
-        <div class="work_categories">
-            <button class="category__btn">ALL <span class="category__count">4</span></button>
-            <button class="category__btn">Front-end <span class="category__count">1</span></button>
-            <button class="category__btn">Back-end <span class="category__count">4</span></button>
-            <button class="category__btn">Mobile <span class="category__count">3</span></button>
+        <h3>이미지를 클릭하면 시연 영상을 볼 수 있습니다.</h3>
+        <div class="work__categories">
+            <button class="category__btn" data-filter='*'>ALL <span class="category__count">4</span></button>
+            <button class="category__btn" data-filter='front-end'>Front-end <span class="category__count">1</span></button>
+            <button class="category__btn" data-filter='back-end'>Back-end <span class="category__count">4</span></button>
+            <button class="category__btn" data-filter='mobile'>Mobile <span class="category__count">3</span></button>
         </div>
         <div class="work__projects">
-            <a href="https://youtu.be/XtVx6pcZOQ4" class="project" target="blank">
+            <a href="https://youtu.be/XtVx6pcZOQ4" class="project" target="blank" data-type='mobile' data-type2='back-end'>
                 <img src="imgs/projects/greensignal__2.PNG" alt="greensignal">
                 <div class="project__description">
                     <h3>태양광기반 제로에너지 <br>안전 캠핑장 : 그린 시그널</h3>
@@ -222,14 +222,14 @@
                     IoT 기능구현 및 제작, 안드로이드 기능 구현, DB 구축 등을 맡았습니다.</span>
                 </div>
             </a>
-            <a href="https://youtu.be/e4IDH9kUInE" class="project" target="blank">
+            <a href="https://youtu.be/e4IDH9kUInE" class="project" target="blank" data-type='mobile' data-type2='back-end'>
                 <img src="imgs/projects/observer__2.PNG" alt="Observer">
                 <div class="project__description">
                     <h3>흡연 감지 알림 서비스 옵저버</h3>
                     <span>IoT 기능구현 및 제작, 안드로이드 기능 구현 및 DB 연동을 맡았습니다.</span>
                 </div>
             </a>
-            <a href="https://youtu.be/yE4SH7JMEag" class="project" target="blank">
+            <a href="https://youtu.be/yE4SH7JMEag" class="project" target="blank" data-type='back-end' data-type2='front-end'>
                 <img src="imgs/projects/neis_last.PNG" alt="NEIS">
                 <div class="project__description">
                     <h3>간호사 병동 관리 시스템 NEIS</h3>
@@ -237,7 +237,7 @@
                     필터 기능, 게시판 작성 기능, 관리자 페이지 구현을 맡았습니다.</span>
                 </div>
             </a>
-            <a href="#work" class="project">
+            <a href="#work" class="project" data-type='mobile' data-type2='back-end'>
                 <img src="imgs/projects/kinderapp.PNG" alt="kindersavor">
                 <div class="project__description">
                     <h3>어린이집 안전관리 시스템 <br> 킨더세이버</h3>

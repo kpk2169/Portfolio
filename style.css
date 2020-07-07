@@ -356,7 +356,15 @@ job__period {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  opacity: 1;
+  transition: all var(--anmation-duration) ease-in;
 }
+
+.work__projects.anim-out {
+  opacity: 0;
+  transform: scale(0.96) translateY(40px);
+}
+
 .project {
   position: relative;
   width: 280px;
@@ -366,6 +374,10 @@ job__period {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.project.invisible {
+  display: none;
 }
 
 .project__img {
