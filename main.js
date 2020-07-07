@@ -32,6 +32,13 @@ homeContactBtn.addEventListener('click', () => {
   scrollIntoView('#contact');
 });
 
+//make home slowly fade to transparent as the window scrolls
+const home = document.querySelector('.home__container');
+const homeHeight = home.getBoundingClientRect().height;
+document.addEventListener('scroll', () => {
+  home.style.opacity = 1 - window.scrollY / homeHeight;
+});
+
 function scrollIntoView(selector) {
   const scrollTo = document.querySelector(selector);
   scrollTo.scrollIntoView({ behavior: 'smooth' });
