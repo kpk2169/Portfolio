@@ -21,9 +21,16 @@ navbarMenu.addEventListener('click', (event) => {
   if (link == null) {
     return;
   }
-
+  navbarMenu.classList.remove('open');
   console.log(event.target.dataset.link);
   scrollIntoView(link);
+});
+
+//Navbar toggle btn for small screen
+const navbarToggleBtn = document.querySelector('.navbar__togglebtn');
+navbarToggleBtn.addEventListener('click', () => {
+  console.log('햄버거');
+  navbarMenu.classList.toggle('open');
 });
 
 //Handle click on contact me

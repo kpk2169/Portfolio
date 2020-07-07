@@ -252,7 +252,7 @@ p {
 }
 
 .job__name,
-job__period {
+.job__period {
   color: var(--color-light-grey);
 }
 .job__name {
@@ -470,12 +470,17 @@ job__period {
 /* For below 768px screen width */
 @media screen and (max-width: 768px) {
   .navbar__togglebtn {
-    display: block;
+    display: none;
+  }
+
+  #navbar.navbar--dark {
+    padding: 16px;
   }
 
   #navbar {
     flex-direction: column;
     align-items: flex-start;
+    background-color: var(--color-pink);
   }
 
   .navbar__menu {
@@ -483,6 +488,9 @@ job__period {
     text-align: center;
     width: 100%;
     display: none;
+  }
+  .navbar__menu.open {
+    display: block;
   }
   .about__majors {
     flex-direction: column;
